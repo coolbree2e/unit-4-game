@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Star Wars Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Dosis:800" rel="stylesheet">
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script> -->
+
+</head>
+
+<body>
+
+    <h1>A STAR WARS GAME</h1>
+    <p>
+        <!-- select fighter -->
+        <b>FIGHTER,</b> choose you must</p>
+    <div class="charboxesholder" id="divCharSelection">
+        <div class="charbox" id="vader" onclick="selectCharacter(this)">
+            <img src="../assets/images/vader.jpg">
+        </div>
+        <div class="charbox" id="fett" onclick="selectCharacter(this)">
+            <img src="../assets/images/fett2.jpeg">
+        </div>
+        <div class="charbox" id="solo" onclick="selectCharacter(this)">
+            <img src="../assets/images/solo3.jpeg">
+        </div>
+        <div class="charbox" id="luke" onclick="selectCharacter(this)">
+            <img src="../assets/images/luke1.jpeg">
+        </div>
+    </div>
+
+    <!-- select opponent -->
+    <p>Defeat the fighters, you
+        <b> WILL</b>
+    </p>
+    <div class="chartofight" id="divOpsFor"></div>
+    <p>The Arena</p>
+    <!-- the fight not sure if I need all the id's copy and paste NBD -->
+    <div class ="charfight" id="divOpponent">
+        <div id="player"></div>
+        <div id="computer"></div>
+    </div>
+    <!-- action text -->
+    <div class="acttxt">
+        <p id="attacktext">You attacked Luke Skywalker for "" damage</p>
+        <p id="defendtext">Boba Fett got you</p>
+    </div>
+    <button onclick="fight()">
+        <b> FIGHT !</b>
+    </button>
+    <!-- reslut of fight -->
+    <div class="endof" id="divDeadOps"></div>
+
+
+
+    <br>
+    <p>The victim</p>
+
+    <div class="eogtxt">
+   
+    </div>
+
+    <!-- Vader text defeated opp-->
+    <!-- <div class="vadertxt">
+        <p id="dvls">If you only knew the power of the dark side. Obi-Wan never told you what happened to your father.</p>
+        <p id="dvbf">I find your lack of faith disturbing.</p>
+        <p id="dvhs">I have you now.</p> -->
+
+    <!-- Vader text win -->
+    <!-- <p id="dv">I see through the lies of the Jedi. I do not fear the dark side as you do. I have brought peace, freedom, justice,
+            and security to my new empire.</p>
+    </div> -->
+
+    <!-- Fett text defeated opp-->
+    <!-- <div class="fetttxt">
+        <p id="bfdv"> As you wish </p>
+        <p id="bfhs">Put Captain Solo in the cargo hold </p>
+        <p id="bfls"> He's no good to me dead </p> -->
+
+    <!-- Fett text win-->
+    <!-- <p id="bf"> Everyone dies...since no one's paid me to kill you, sleep well</p>
+    </div> -->
+    <!-- Skywalker text defeated opp-->
+    <!-- <div class="luketxt">
+        <p id="lsdv">I'll never join you! </p>
+        <p id="lsbf"> Your overconfidence is your weakness</p>
+        <p id="lshs">But I was going into Tosche Station to pick up some power converters!</p> -->
+
+    <!-- Skywalker text win -->
+    <!-- <p id="ls">Looks like I’m going nowhere… I’m gonna finish cleaning those ‘droids </p>
+    </div> -->
+    <!-- Solo text defeated opp-->
+    <!-- <div class="hstxt">
+        <p id="hsdv"> You know, sometimes I amaze even myself</p>
+        <p id="hsbf"> Don’t everyone thank me at once </p>
+        <p id="hsls">Great kid, don’t get cocky </p> -->
+
+    <!-- Solo text win -->
+    <!-- <p id="hs"> Hokey religions and ancient weapons are no match for a good blaster at your side</p> -->
+    <!-- I did shoot first LOL -->
+    <!-- </div> -->
+
+
+    <!-- result text -->
+    <!-- <div class="rslttxt"> -->
+    <!-- Defeted Luke Skywalker, you have  -->
+    <!-- Defeted Han Solo, you have  -->
+    <!-- Defeted Bobba Fett, you have  -->
+    <!-- Defeted Darth Vder, you have  -->
+    <!-- </div> -->
+
+    <button id="btn">No! Try not! Do or do not, there is no try.</button>
+    <script src="../assets/javascript/game.js"></script>
+</body>
+
+</html>

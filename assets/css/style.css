@@ -1,0 +1,77 @@
+* {
+    font-family: Dosis;
+    color: bisque;
+    font-size: 25px;
+}
+
+html,
+body {
+    margin: 0px;
+}
+
+body {
+    background-image: url("../images/SWbackground1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+h1 {
+    margin: 15px;
+    position: relative;
+    text-align: center;
+    padding-top: 35px;
+    color: gold;
+    font-size: 48px;
+}
+
+p {
+    margin: 10px;
+}
+
+.charboxesholder,
+.chartofight,
+.charfight,
+.endof {
+    margin: 12px;
+    position: relative;
+    height: 200px;
+    width: 72%;
+}
+
+.charboxesholder .charbox {
+    border: 5px white solid;
+}
+
+.chartofight .charbox {
+    border: 5px lightgray solid;
+}
+
+#computer .charbox {
+    border: 5px red solid;
+}
+#player .charbox{
+    border: 5px green solid;
+}
+.endof .charbox{
+    border: 5px black solid;
+}
+
+.charbox {
+    height: 150px;
+    margin: 10px;
+    position: relative;
+    width: 150px;
+    float: left;
+}
+.charbox img{
+    height: 150px;
+    width: 150px;
+}
+button {
+    background-color: black;
+    height: 42px;
+    ;
+}
+
+#btn {}
