@@ -19,17 +19,25 @@
         <!-- select fighter -->
         <b>FIGHTER,</b> choose you must</p>
     <div class="charboxesholder" id="divCharSelection">
-        <div class="charbox" id="vader" onclick="selectCharacter(this)">
+        <div class="charbox" id="vader" >
             <img src="../assets/images/vader.jpg">
+
+            <span id="vaderhp">hp:</span>
         </div>
-        <div class="charbox" id="fett" onclick="selectCharacter(this)">
+        <div class="charbox" id="fett" >
             <img src="../assets/images/fett2.jpeg">
+
+            <span id="fetthp">hp:</span>
         </div>
-        <div class="charbox" id="solo" onclick="selectCharacter(this)">
+        <div class="charbox" id="solo">
             <img src="../assets/images/solo3.jpeg">
+
+            <span id="solohp">hp:</span>
         </div>
-        <div class="charbox" id="luke" onclick="selectCharacter(this)">
+        <div class="charbox" id="luke" >
             <img src="../assets/images/luke1.jpeg">
+
+            <span id="lukehp">hp:</span>
         </div>
     </div>
 
@@ -40,28 +48,30 @@
     <div class="chartofight" id="divOpsFor"></div>
     <p>The Arena</p>
     <!-- the fight not sure if I need all the id's copy and paste NBD -->
-    <div class ="charfight" id="divOpponent">
+    <div class="charfight" id="divOpponent">
         <div id="player"></div>
         <div id="computer"></div>
     </div>
     <!-- action text -->
     <div class="acttxt">
-        <p id="attacktext">You attacked Luke Skywalker for "" damage</p>
-        <p id="defendtext">Boba Fett got you</p>
+        <p id="playertext">You attacked Luke Skywalker for "" damage</p>
+        <p id="opponenttext">Boba Fett got you</p>
     </div>
+   
+
     <button onclick="fight()">
         <b> FIGHT !</b>
     </button>
+    <p>The victim</p>
     <!-- reslut of fight -->
     <div class="endof" id="divDeadOps"></div>
 
 
 
     <br>
-    <p>The victim</p>
-
-    <div class="eogtxt">
    
+    <div class="eogtxt">
+
     </div>
 
     <!-- Vader text defeated opp-->
@@ -113,7 +123,7 @@
     <!-- Defeted Darth Vder, you have  -->
     <!-- </div> -->
 
-    <button id="btn">No! Try not! Do or do not, there is no try.</button>
+    <button onclick="reset()"id="btn">No! Try not! Do or do not, there is no try.</button>
     <script src="../assets/javascript/game.js"></script>
 </body>
 

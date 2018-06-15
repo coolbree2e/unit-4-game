@@ -1,6 +1,5 @@
 * {
     font-family: Dosis;
-    color: bisque;
     font-size: 25px;
 }
 
@@ -14,6 +13,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment: fixed;
+    color: bisque;
 }
 
 h1 {
@@ -40,37 +40,55 @@ p {
 }
 
 .charboxesholder .charbox {
-    border: 5px white solid;
+    background-color: white;
+    color: black;
 }
 
 .chartofight .charbox {
-    border: 5px lightgray solid;
+    background-color: lightgray;
+    color: black;
 }
 
 #computer .charbox {
-    border: 5px red solid;
+    background-color: red;
+    color: black;
 }
-#player .charbox{
-    border: 5px green solid;
+
+#player .charbox {
+    background-color: green;
+    color: black;
 }
-.endof .charbox{
-    border: 5px black solid;
+
+.endof .charbox {
+    background-color: black;
+    color: gold;
 }
 
 .charbox {
     height: 150px;
     margin: 10px;
+    padding: 10px;
     position: relative;
     width: 150px;
     float: left;
+    text-align: center;
 }
-.charbox img{
-    height: 150px;
-    width: 150px;
+
+.charbox span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
 }
+
+.charbox img {
+    height: 120px;
+    width: 120px;
+}
+
 button {
     background-color: black;
     height: 42px;
+    color: bisque;
     ;
 }
 
